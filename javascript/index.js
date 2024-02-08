@@ -1,13 +1,4 @@
 function updateTime() {
-  //london
-  let londonElement = document.querySelector("#london");
-  let londonDateElement = londonElement.querySelector(".date");
-  let londonTimeElement = londonElement.querySelector(".time");
-  let londonTime = moment().tz("Europe/london");
-
-  londonDateElement.innerHTML = londonTime.format("dddd, MMMM Do YYYY");
-  londonTimeElement.innerHTML = londonTime.format("HH:mm:ss");
-
   //tokyo
   let tokyoElement = document.querySelector("#tokyo");
   let tokyoDateElement = tokyoElement.querySelector(".date");
