@@ -11,28 +11,36 @@
   <body>
     <div class="container">
       <h1>🌍 World Clocks 🌏</h1>
-      <select>
+
+      <select id="city">
         <option value="">Select a city...</option>
-        <option value="">London 🇬🇧</option>
-        <option value="">Tokyo 🇯🇵</option>
-        <option value="">Manama 🇧🇭</option>
-        <option value="">New York 🇺🇸</option>
+        <option value="Asia/Bahrain" "🇧🇭">Bahrain 🇧🇭</option>
+        <option value="Europe/London">London 🇬🇧</option>
+        <option value="Europe/Moscow">Moscow 🇷🇺</option>
+        <option value="America/New_York">New York 🇺🇸</option>
+        <option value="America/Sao_Paulo">Sao Paulo 🇧🇷</option>
+        <option value="Australia/Sydney">Sydney 🇦🇺</option>
+        <option value="Asia/Tehran">Tehran 🇮🇷</option>
+        <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
+        <option value="America/Vancouver">Vancouver 🇨🇦</option>
       </select>
 
-      <div class="city" id="tokyo">
-        <div>
-          <h2>Tokyo 🇯🇵</h2>
-          <div class="date"></div>
+      <div id="cities">
+        <div class="city" id="manama">
+          <div>
+            <h2>Bahrain</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
-      </div>
 
-      <div class="city" id="manama">
-        <div>
-          <h2>Manama 🇧🇭</h2>
-          <div class="date"></div>
+        <div class="city" id="tokyo">
+          <div>
+            <h2>Tokyo</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
       </div>
     </div>
     <footer>
