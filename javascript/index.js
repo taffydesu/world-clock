@@ -25,15 +25,6 @@ function updateTime() {
 
   manamaDateElement.innerHTML = manamaTime.format("dddd, MMMM Do YYYY");
   manamaTimeElement.innerHTML = manamaTime.format("HH:mm:ss");
-
-  //new york
-  let newYorkElement = document.querySelector("#new-york");
-  let newYorkDateElement = newYorkElement.querySelector(".date");
-  let newYorkTimeElement = newYorkElement.querySelector(".time");
-  let newYorkTime = moment().tz("America/New_York");
-
-  newYorkDateElement.innerHTML = newYorkTime.format("dddd, MMMM Do YYYY");
-  newYorkTimeElement.innerHTML = newYorkTime.format("HH:mm:ss");
 }
 
 updateTime();
